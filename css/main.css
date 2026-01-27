@@ -1,0 +1,159 @@
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #6b350e;
+    font-size: 22px;
+
+}
+
+header {
+    background-image: url("../images/header-photo.jpg");
+    min-height: 650px;
+}
+
+.overlay {
+    background-image: linear-gradient(to bottom, #4A2409, rgba(255,0,0,0));
+    min-height: 650px;
+}
+
+nav {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: white;
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: auto;
+    display: flex;
+}
+
+nav li {
+    padding: 30px;
+}
+
+nav img {
+    padding: 30px;
+}
+
+.overlay > div {
+    min-height: 516px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 47px;
+    font-weight: 900;
+    line-height: 45px;
+    color: white;
+    text-align: center;
+    padding-top: auto;
+}
+
+.location-hours {
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 38px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+h4 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+h5 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+main {
+    margin-top: 70px;
+    max-width: 1052px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main img {
+    width: 390px;
+    height: 390px;
+    border-radius: 20px;
+}
+
+main section {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+main section:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.text {
+    padding-left: 50px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.text p {
+    margin-top: 0;
+}
+
+.coffee-sign {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div .coffee-sign {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.drinks {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.food {
+    padding-left: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.text-overlay {
+    position: absolute;
+    font-weight: 900;
+    font-size: 36px;
+    bottom: 0;
+    margin-bottom: 20px;
+}
