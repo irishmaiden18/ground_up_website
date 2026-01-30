@@ -11,7 +11,7 @@ body {
 
 .wrapper {
     background-color: white;
-    padding: 10px;
+    padding-top: 10px;
     border-radius: 20px;
     max-width: 1300px;
     margin-left: auto;
@@ -23,6 +23,8 @@ header {
     min-height: 650px;
     border-radius: 20px;
     background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .overlay-header {
@@ -128,7 +130,6 @@ main section:nth-of-type(even) {
 .text {
     padding-left: 50px;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -190,12 +191,14 @@ footer {
     margin-top: 50px;
     border-top: solid 2px #6b350e66;
     font-size: 25px;
+    /* display: grid;
+    grid-template-rows: 1fr 1fr 1fr;*/
 }
 
 .contact {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    text-align: center;
 }
 
 .address {
@@ -217,5 +220,56 @@ footer {
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+    body {
+        margin: 0;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .overlay-header {
+        border-radius: 0;
+    }
+
+    nav {
+        display: block;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav li {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    nav img {
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    h1 {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 0;
+    }
+
 }
