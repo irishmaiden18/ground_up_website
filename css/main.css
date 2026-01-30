@@ -5,17 +5,30 @@ body {
     font-style: normal;
     color: #6b350e;
     font-size: 22px;
+    margin: 20px;
+    background-color: #35667C;
+}
 
+.wrapper {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
     background-image: url("../images/header-photo.jpg");
     min-height: 650px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
 }
 
-.overlay {
+.overlay-header {
     background-image: linear-gradient(to bottom, #4A2409, rgba(255,0,0,0));
     min-height: 650px;
+    border-radius: 20px;
 }
 
 nav {
@@ -23,6 +36,7 @@ nav {
     font-size: 22px;
     color: white;
     display: flex;
+    padding-right: 50px;
 }
 
 nav ul {
@@ -32,14 +46,15 @@ nav ul {
 }
 
 nav li {
-    padding: 30px;
+    padding: 20px;
 }
 
 nav img {
-    padding: 30px;
+    padding: 20px;
+    padding-left: 50px;
 }
 
-.overlay > div {
+.overlay-header > div {
     min-height: 516px;
     display: flex;
     justify-content: center;
@@ -66,13 +81,13 @@ h2 {
     margin-bottom: 10px;
 }
 
-h3 {
+.hours {
     font-size: 38px;
     font-weight: 600;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
-h4 {
+h3 {
     font-size: 36px;
     line-height: 40px;
     font-weight: 700;
@@ -80,11 +95,12 @@ h4 {
     margin-top: 10px;
 }
 
-h5 {
+.friendly-neighborhood {
     font-size: 25px;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 0;
+    padding-top: 50px;
 }
 
 main {
@@ -137,15 +153,27 @@ div .coffee-sign {
     padding-top: 80px;
 }
 
-.drinks {
+.food-and-drink {
     position: relative;
-    display: flex;
-    justify-content: center;
+    height: 390px;
+    width: 500px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+    display: inline-block;
+}
+.drinks {
+    background-image: url("../images/drink menu photo.jpg");
 }
 
 .food {
-    padding-left: 50px;
-    position: relative;
+    margin-left: 50px;
+    background-image: url("../images/food menu photo.jpg");
+}
+
+.overlay-menu {
+    background-image: linear-gradient(to top, #4A2409, rgba(255,0,0,0) 50%);
+    min-height: 390px;
     display: flex;
     justify-content: center;
 }
@@ -156,4 +184,38 @@ div .coffee-sign {
     font-size: 36px;
     bottom: 0;
     margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 50px;
+    border-top: solid 2px #6b350e66;
+    font-size: 25px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.address {
+    font-weight: 800;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-padding {
+    padding-right: 13px;
+}
+
+.copyright {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
 }
