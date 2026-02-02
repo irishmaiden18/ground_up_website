@@ -161,6 +161,10 @@ div .coffee-sign {
     padding-top: 80px;
 }
 
+.menu a {
+    color: white;
+}
+
 .food-and-drink {
     position: relative;
     height: 390px;
@@ -170,6 +174,7 @@ div .coffee-sign {
     overflow: hidden;
     display: inline-block;
 }
+
 .drinks {
     background-image: url("../images/drink menu photo.jpg");
 }
