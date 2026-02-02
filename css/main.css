@@ -57,6 +57,11 @@ nav img {
     padding-left: 50px;
 }
 
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
 .overlay-header > div {
     min-height: 516px;
     display: flex;
@@ -203,6 +208,11 @@ footer {
 
 .address {
     font-weight: 800;
+    order: 1;
+}
+
+.contact p:nth-of-type(3) {
+    order: 2;
 }
 
 .social-media {
@@ -284,6 +294,7 @@ footer {
     }
 
     .friendly-neighborhood {
+        font-size: 20px;
         padding-top: 30px;
     }
 
@@ -295,5 +306,95 @@ footer {
     .hours {
         font-size: 31px;
         margin-top: 15px;
+    }
+
+    .location-hours {
+        max-width: 328px;
+        margin: auto;
+    }
+
+    main {
+        margin-top: 60px;
+    }
+
+    main img {
+        width: 328px;
+        height: 328px;
+        display: block;
+        margin: auto;
+        padding-bottom: 15px
+        
+    }
+
+    main section {
+        display: block;
+        max-width: 328px;
+        margin: auto;
+    }
+
+    .text {
+        padding-left: 0;
+    }
+
+    h3 {
+        font-size: 29px;
+        line-height: 34px;
+    }
+
+    .text p {
+        font-size: 18px;
+        line-height: 26px;
+        padding-bottom: 45px;
+    }
+
+    .menu {
+        display: inline-block;
+        padding-top: 60px;
+    }
+
+    .food-and-drink {
+        height: 254.82px;
+    }
+
+    .drinks {
+        background-size: 328px 254.82px;
+    }
+
+    .food {
+        margin-left: 0;
+        margin-top: 25px;
+        background-size: 328px 254.82px;
+    }
+
+    .overlay-menu {
+        min-height: 254.82px;
+        width: 328px;
+        position: relative;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    .text-overlay {
+        position: absolute;
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        padding-top: 20px;
+        font-size: 22px;
+    }
+
+    .contact {
+        display: block;
+        padding-top: 15px;
+    }
+
+    .contact p {
+        margin: 10px;
+    }
+
+    .social-media {
+        padding-top: 30px;
     }
 }
