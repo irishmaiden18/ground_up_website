@@ -1,6 +1,6 @@
 # A Coffee Shop Website
 
-I was given designs in figma and used them to code a static site using HTML & CSS.
+I was given designs in figma and used them to code a home page for a static site using HTML & CSS.
 
 Link to site: https://irishmaiden18.github.io/ground_up_website/
 
