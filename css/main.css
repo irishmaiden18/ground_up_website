@@ -5,56 +5,65 @@ body {
     font-style: normal;
     color: #6b350e;
     font-size: 22px;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
     background-color: #35667C;
 }
 
 .wrapper {
     background-color: white;
-    padding-top: 10px;
-    border-radius: 20px;
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
 }
 
 header {
     background-image: url("../images/header-photo.jpg");
-    background-position: center;
     min-height: 650px;
-    border-radius: 20px;
     background-repeat: no-repeat;
-    margin-left: 10px;
-    margin-right: 10px;
+    background-position-x: -40px;
+    background-position-y: 10px;
+    border-radius: 0;
+    margin: 0;
 }
 
 .overlay-header {
     background-image: linear-gradient(to bottom, #4A2409, rgba(255,0,0,0));
     min-height: 650px;
-    border-radius: 20px;
+    border-radius: 0;
 }
 
 nav {
     text-transform: uppercase;
     font-size: 22px;
     color: white;
-    display: flex;
-    padding-right: 50px;
+    display: block;
+    padding-right: 0;
+    padding-top: 0;
 }
 
 nav ul {
     list-style: none;
     margin-left: auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 nav li {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 nav img {
     padding: 20px;
-    padding-left: 50px;
+    padding-left: 0;
+    padding-bottom: 0;
 }
 
 nav a {
@@ -69,17 +78,35 @@ nav a {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h1 {
     font-size: 47px;
     font-weight: 900;
     line-height: 45px;
     color: white;
     text-align: center;
-    padding-top: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
 }
 
 .location-hours {
-    text-align: center;
+    text-align: center; 
+    max-width: 328px;
+    margin: auto;
+}
+
+.friendly-neighborhood {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 20px;
+    padding-top: 30px;
 }
 
 h2 {
@@ -88,60 +115,57 @@ h2 {
     margin-top: 0;
     margin-bottom: 10px;
     line-height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .hours {
-    font-size: 38px;
     font-weight: 600;
-    margin-top: 20px;
-}
-
-h3 {
-    font-size: 36px;
-    line-height: 40px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.friendly-neighborhood {
-    font-size: 25px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 0;
-    padding-top: 50px;
+    font-size: 31px;
+    margin-top: 15px;
 }
 
 main {
-    margin-top: 70px;
     max-width: 1052px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 60px;
 }
 
 main img {
-    width: 390px;
-    height: 390px;
+    width: 328px;
+    height: 328px;
+    display: block;
+    margin: auto;
+    padding-bottom: 15px;
     border-radius: 20px;
 }
 
 main section {
-    display: flex;
-    margin-bottom: 80px;
+    display: block;
+    max-width: 328px;
+    margin: auto;
 }
 
-main section:nth-of-type(even) {
-    flex-direction: row-reverse;
+h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 29px;
+    line-height: 34px;
 }
 
 .text {
-    padding-left: 50px;
     display: flex;
     align-items: center;
+    padding-left: 0;
 }
 
 .text p {
     margin-top: 0;
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 45px;
 }
 
 .coffee-sign {
@@ -156,9 +180,9 @@ div .coffee-sign {
 
 .menu {
     color: white;
-    display: flex;
     justify-content: center;
-    padding-top: 80px;
+    display: inline-block;
+    padding-top: 60px;
 }
 
 .menu a {
@@ -166,9 +190,10 @@ div .coffee-sign {
 }
 
 .food-and-drink {
+    height: 254.82px;
+    width: 100%;
+    background-position: center;
     position: relative;
-    height: 390px;
-    width: 500px;
     background-repeat: no-repeat;
     border-radius: 20px;
     overflow: hidden;
@@ -177,53 +202,61 @@ div .coffee-sign {
 
 .drinks {
     background-image: url("../images/drink menu photo.jpg");
+    background-size: 328px 254.82px;
 }
 
 .food {
-    margin-left: 50px;
     background-image: url("../images/food menu photo.jpg");
+    margin-left: 0;
+    margin-top: 25px;
+    background-size: 328px 254.82px;
 }
 
 .overlay-menu {
+    min-height: 254.82px;
+    width: 328px;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
     background-image: linear-gradient(to top, #4A2409, rgba(255,0,0,0) 50%);
-    min-height: 390px;
     display: flex;
     justify-content: center;
 }
 
 .text-overlay {
     position: absolute;
-    font-weight: 900;
     font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 900;
     bottom: 0;
-    margin-bottom: 20px;
 }
 
 footer {
+    padding-top: 20px;
+    font-size: 22px;
     margin-top: 50px;
     border-top: solid 2px #6b350e66;
-    font-size: 25px;
 }
 
 .contact {
-    display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
+    display: block;
+    padding-top: 15px;
     text-align: center;
+}
+
+.contact p {
+    margin: 10px;
 }
 
 .address {
     font-weight: 800;
-    order: 1;
-}
-
-.contact p:nth-of-type(3) {
-    order: 2;
 }
 
 .social-media {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 30px;
 }
 
 .icon-padding {
@@ -238,168 +271,201 @@ footer {
     padding: 20px;
 }
 
-@media (max-width: 500px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
 
-    .wrapper {
-        width: 100%;
-        padding: 0;
-        border-radius: 0;
-        margin: 0;
-    }
 
-    header {
-        background-position-x: -40px;
-        background-position-y: 10px;
-        border-radius: 0;
-        margin: 0;
-    }
 
-    .overlay-header {
-        border-radius: 0;
-    }
 
-    nav {
-        display: block;
-        padding-right: 0;
-        padding-top: 0;
-    }
 
-    nav ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        margin-bottom: 0;
-    }
 
-    nav li {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
 
-    nav img {
-        padding-left: 0;
-        padding-bottom: 0;
-    }
 
-    .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    h1 {
+
+@media(min-width: 601px) {
+    h2 {
         padding-left: 10px;
         padding-right: 10px;
-        padding-top: 0;
-    }
-
-    .friendly-neighborhood {
-        font-size: 20px;
-        padding-top: 30px;
-    }
-
-    h2 {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .hours {
-        font-size: 31px;
-        margin-top: 15px;
     }
 
     .location-hours {
-        max-width: 328px;
-        margin: auto;
-    }
-
-    main {
-        margin-top: 60px;
-    }
-
-    main img {
-        width: 328px;
-        height: 328px;
-        display: block;
-        margin: auto;
-        padding-bottom: 15px
-        
+        max-width: 500px;
     }
 
     main section {
-        display: block;
-        max-width: 328px;
-        margin: auto;
+        text-align: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        max-width: 600px;
     }
 
     .text {
         padding-left: 0;
     }
 
-    h3 {
-        font-size: 29px;
-        line-height: 34px;
-    }
-
     .text p {
-        font-size: 18px;
-        line-height: 26px;
-        padding-bottom: 45px;
+        text-align: left;
+    }
+}
+
+@media (min-width: 833px) {
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1121px) {
+
+    body {
+        margin: 20px;  
     }
 
-    .menu {
-        display: inline-block;
-        padding-top: 60px;
+    .wrapper {
+        padding-top: 10px;
+        border-radius: 20px;
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .food-and-drink {
-        height: 254.82px;
+    header {
+        background-position: center;
+        border-radius: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
-    .drinks {
-        background-size: 328px 254.82px;
-    }
-
-    .food {
-        margin-left: 0;
-        margin-top: 25px;
-        background-size: 328px 254.82px;
-    }
-
-    .overlay-menu {
-        min-height: 254.82px;
-        width: 328px;
-        position: relative;
-        margin: auto;
+    .overlay-header {
         border-radius: 20px;
     }
 
-    .text-overlay {
-        position: absolute;
+    nav {
+        display: flex;
+        padding-right: 50px;
+    }
+
+    nav li {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    nav img {
+        padding-bottom: 20px;
+        padding-left: 50px;
+    }
+
+    h1 {
+        padding-top: auto;
+    }
+
+    .location-hours {
+        max-width: 800px;
+    }
+
+    .friendly-neighborhood {
+        font-size: 25px;
+        padding-top: 50px;
+    }
+
+    h2 {
+        padding-top: 8px;
+    }
+
+    .hours {
+        font-size: 38px;
+        margin-top: 20px;
+    }
+
+    main {
+        margin-top: 70px;
+    }
+
+    main img {
+        width: 390px;
+        height: 390px;
+    }
+
+    main section {
+        display: flex;
+        max-width: 1052px;
+        margin-bottom: 80px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    main section:nth-of-type(odd) .text {
+        padding-left: 50px;
+    }
+
+    main section:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+
+    main section:nth-of-type(even) .text {
+        padding-right: 50px;
+    }
+
+    h3 {
         font-size: 36px;
-        margin-bottom: 10px;
+        line-height: 40px;
+        text-align: left;
+    }
+
+    .text {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .menu {
+        display: flex;
+        padding-top: 80px;
+    }
+
+    .food-and-drink {
+        height: 390px;
+        width: 500px;
+    }
+
+    .drinks {
+        background-size: 502px 390px;
+    }
+
+    .food {
+        margin-left: 50px; 
+        margin-top: 0;
+        background-size: 502px 390px;
+    }
+
+    .overlay-menu {
+        min-height: 390px;
+        width: 502px;
+    }
+
+    .text-overlay {
+        margin-bottom: 20px;
     }
 
     footer {
-        padding-top: 20px;
-        font-size: 22px;
+        font-size: 25px;
     }
 
     .contact {
-        display: block;
-        padding-top: 15px;
+        display: grid;
+        grid-template-columns: 2fr 3fr 2fr;
     }
 
-    .contact p {
-        margin: 10px;
+    .address {
+        order: 1;
+    }
+
+    .contact p:nth-of-type(3) {
+        order: 2;
     }
 
     .social-media {
-        padding-top: 30px;
+        padding-top: 20px;
     }
 }
