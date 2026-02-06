@@ -271,16 +271,8 @@ footer {
     padding: 20px;
 }
 
-
-
-
-
-
-
-
-
-
 @media(min-width: 601px) {
+  
     h2 {
         padding-left: 10px;
         padding-right: 10px;
@@ -307,29 +299,6 @@ footer {
 }
 
 @media (min-width: 833px) {
-
-}
-
-
-
-
-
-
-
-
-@media (min-width: 1121px) {
-
-    body {
-        margin: 20px;  
-    }
-
-    .wrapper {
-        padding-top: 10px;
-        border-radius: 20px;
-        max-width: 1300px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     header {
         background-position: center;
@@ -361,24 +330,6 @@ footer {
         padding-top: auto;
     }
 
-    .location-hours {
-        max-width: 800px;
-    }
-
-    .friendly-neighborhood {
-        font-size: 25px;
-        padding-top: 50px;
-    }
-
-    h2 {
-        padding-top: 8px;
-    }
-
-    .hours {
-        font-size: 38px;
-        margin-top: 20px;
-    }
-
     main {
         margin-top: 70px;
     }
@@ -397,7 +348,8 @@ footer {
     }
 
     main section:nth-of-type(odd) .text {
-        padding-left: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     main section:nth-of-type(even) {
@@ -405,9 +357,61 @@ footer {
     }
 
     main section:nth-of-type(even) .text {
-        padding-right: 50px;
+        padding-right: 25px;
+        padding-left: 25px;
     }
 
+    .menu {
+        display: flex;
+        padding-top: 80px;
+    }
+
+    .food {
+        margin-left: 50px; 
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1121px) {
+
+    body {
+        margin: 20px;  
+    }
+
+    .wrapper {
+        padding-top: 10px;
+        border-radius: 20px;
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .location-hours {
+        max-width: 800px;
+    }
+
+    .friendly-neighborhood {
+        font-size: 25px;
+        padding-top: 50px;
+    }
+
+    h2 {
+        padding-top: 8px;
+    }
+
+    .hours {
+        font-size: 38px;
+        margin-top: 20px;
+    }
+
+    main section:nth-of-type(odd) .text {
+        padding-left: 50px;
+    }
+
+    main section:nth-of-type(even) .text {
+        padding-right: 50px;
+    }
+    
     h3 {
         font-size: 36px;
         line-height: 40px;
@@ -419,10 +423,7 @@ footer {
         line-height: 30px;
     }
 
-    .menu {
-        display: flex;
-        padding-top: 80px;
-    }
+    
 
     .food-and-drink {
         height: 390px;
@@ -434,8 +435,6 @@ footer {
     }
 
     .food {
-        margin-left: 50px; 
-        margin-top: 0;
         background-size: 502px 390px;
     }
 
